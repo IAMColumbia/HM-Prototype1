@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * _speed * _forwardInput);
 
         // Rotate the vehicle
-        transform.Translate(Vector3.right * Time.deltaTime * _turnSpeed * _horizontalInput);
+        transform.Rotate(Vector3.up, Time.deltaTime * _turnSpeed * _horizontalInput);
         
     }
 }
