@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private float _turnSpeed;
 
     private float _horizontalInput;
+    private float _forwardInput;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +23,10 @@ public class PlayerController : MonoBehaviour
     {
         // Set up player input
         _horizontalInput = Input.GetAxis("Horizontal");
+        _forwardInput = Input.GetAxis("Vertical");
 
         // Move the vehicle forward
-        transform.Translate(Vector3.forward * Time.deltaTime * _speed);
+        transform.Translate(Vector3.forward * Time.deltaTime * _speed * _forwardInput);
 
         // Rotate the vehicle
         transform.Translate(Vector3.right * Time.deltaTime * _turnSpeed * _horizontalInput);
