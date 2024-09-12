@@ -662,6 +662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 842734063}
+  _offset: {x: 0, y: 5, z: -7}
 --- !u!1001 &541219505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -835,6 +836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
+  _turnSpeed: 0
 --- !u!54 &842734069
 Rigidbody:
   m_ObjectHideFlags: 0
